@@ -52,31 +52,31 @@ const Footer = () => {
       icon: 'social/git' as const,
       iconSize: '18px',
       text: 'Contribute',
-      url: 'https://github.com/blockscout/blockscout',
+      url: '#',
     },
     {
       icon: 'social/twitter' as const,
       iconSize: '18px',
       text: 'X (ex-Twitter)',
-      url: 'https://www.twitter.com/blockscoutcom',
+      url: '#',
     },
     {
       icon: 'social/discord' as const,
       iconSize: '24px',
       text: 'Discord',
-      url: 'https://discord.gg/blockscout',
+      url: '#',
     },
     {
       icon: 'brands/blockscout' as const,
       iconSize: '18px',
       text: 'All chains',
-      url: 'https://www.blockscout.com/chains-and-projects',
+      url: '#',
     },
     {
       icon: 'donate' as const,
       iconSize: '20px',
       text: 'Donate',
-      url: 'https://github.com/sponsors/blockscout',
+      url: '#',
     },
   ];
 

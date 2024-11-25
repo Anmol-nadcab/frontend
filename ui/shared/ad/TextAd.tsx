@@ -5,7 +5,7 @@ import config from 'configs/app';
 import { useAppContext } from 'lib/contexts/app';
 import * as cookies from 'lib/cookies';
 
-import CoinzillaTextAd from './CoinzillaTextAd';
+// import CoinzillaTextAd from './CoinzillaTextAd';
 
 const TextAd = ({ className }: {className?: string}) => {
   const hasAdblockCookie = cookies.get(cookies.NAMES.ADBLOCK_DETECTED, useAppContext().cookies);
@@ -14,7 +14,9 @@ const TextAd = ({ className }: {className?: string}) => {
     return null;
   }
 
-  return <CoinzillaTextAd className={ className }/>;
+  return <span  className={ className }></span>
+    // <CoinzillaTextAd className={ className }/>;
+
 };
 
 export default chakra(TextAd);

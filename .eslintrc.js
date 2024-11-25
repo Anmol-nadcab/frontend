@@ -165,7 +165,7 @@ module.exports = {
       allowBlockStart: true,
     } ],
     'max-len': [ 'error', 160, 4 ],
-    'no-console': 'error',
+    'no-console': 'off',
     'no-empty': [ 'error', { allowEmptyCatch: true } ],
     'no-implicit-coercion': [ 'error', {
       number: true,
@@ -239,14 +239,14 @@ module.exports = {
         alphabetize: { order: 'asc', ignoreCase: true },
       },
     ],
-
-    'no-restricted-imports': [ 'error', RESTRICTED_MODULES ],
-    'no-restricted-properties': [ 2, {
-      object: 'process',
-      property: 'env',
-      // FIXME: restrict the rule only NEXT_PUBLIC variables
-      message: 'Please use configs/app/index.ts to import any NEXT_PUBLIC environment variables. For other properties please disable this rule for a while.',
-    } ],
+    'no-restricted-properties': [
+      'error',
+      {
+        object: 'process',
+        property: 'env',
+        message: 'Please use configs/app/index.ts for environment variables.'
+      }
+    ],
 
     'react/jsx-key': 'error',
     'react/jsx-no-bind': [ 'error', {

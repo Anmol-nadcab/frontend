@@ -14,8 +14,8 @@ const TextAd = ({ className }: {className?: string}) => {
     return null;
   }
 
-  return <span  className={ className }></span>
-    // <CoinzillaTextAd className={ className }/>;
+  return <span className={ className }></span>;
+  // <CoinzillaTextAd className={ className }/>;
 
 };
 

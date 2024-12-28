@@ -244,8 +244,8 @@ module.exports = {
       {
         object: 'process',
         property: 'env',
-        message: 'Please use configs/app/index.ts for environment variables.'
-      }
+        message: 'Please use configs/app/index.ts for environment variables.',
+      },
     ],
 
     'react/jsx-key': 'error',
